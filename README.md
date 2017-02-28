@@ -1,2 +1,2 @@
-# bixocthex
-Bin Dec Hex convert practice
+# bindechex
+binary decimal hexadecimal convert practice
