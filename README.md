@@ -1,2 +1,2 @@
 # bixocthex
-Bin Oct Hex convert practice
+Bin Dec Hex convert practice
