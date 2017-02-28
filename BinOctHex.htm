@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BinOctHex Convert</title>
+<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="personCtrl" style="width: 400px;height: 200px;">
+
+
+<div style="width: 400px;">
+<select ng-model="optleft" ng-options="m for m in optmodel">
+  <option value ="" selected="selected">----</option>
+</select>
+-->
+<select ng-model="optright" ng-options="m for m in optmodel">
+  <option value ="" selected="selected">----</option>
+</select>
+
+<button ng-click="start()">Start</button>
+<button ng-click="reset()">Reset</button>
+</div>
+
+<div>
+    <div><strong>Pass&nbsp;:&nbsp;</strong>{{score_pass}}</div>
+    <div><strong>Fail&nbsp;:&nbsp;</strong>{{score_fail}}</div>
+</div>
+
+<div style="width: 400px;">{{left}}</div>
+
+<div style="width: 400px;">
+    <input type="text" ng-model="right" ng-keyup="myKeyup($event)"/>
+</div>
+
+<div style="width: 400px;">
+{{message}}
+</div>
+
+<div style="width: 400px;">
+{{result}}
+</div>
+
+</div>
+
+
+
+</body>
+</html>
+
+
+<script type="text/javascript" src="app.js"></script>
+
