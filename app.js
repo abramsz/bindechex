@@ -8,7 +8,7 @@ app.controller('personCtrl', function($scope,$interval) {
     
     $scope.optleft = "";
     $scope.optright = "";
-    $scope.optmodel = ["bin","oct","hex"];
+    $scope.optmodel = ["bin","dec","hex"];
 
     $scope.score_pass = 0;
     $scope.score_fail = 0;
@@ -29,7 +29,7 @@ app.controller('personCtrl', function($scope,$interval) {
 
         if($scope.optleft == "bin"){
             leftArray = binArray.slice(0);
-        }else if($scope.optleft == "oct"){
+        }else if($scope.optleft == "dec"){
             leftArray = octArray.slice(0);
         }else if($scope.optleft == "hex"){
             leftArray = hexArray.slice(0);
@@ -37,7 +37,7 @@ app.controller('personCtrl', function($scope,$interval) {
 
         if($scope.optright == "bin"){
             rightArray = binArray.slice(0);
-        }else if($scope.optright == "oct"){
+        }else if($scope.optright == "dec"){
             rightArray = octArray.slice(0);
         }else if($scope.optright == "hex"){
             rightArray = hexArray.slice(0);
